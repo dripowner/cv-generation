@@ -1,0 +1,9 @@
+venv
+__pycache__
+weights/*
+!weights/.gitkeep
+train_venv
+*.csv
+*.json
+!t5_training_config.json
+.vscode

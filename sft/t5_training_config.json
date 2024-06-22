@@ -1,0 +1,14 @@
+{
+    "batch_size": 8,
+    "learning_rate": 0.0004,
+    "num_train_epochs": 10,
+    "gradient_accumulation_steps": 6,
+    "max_target_tokens_count": 200,
+    "max_source_tokens_count": 600,
+    "logging_steps": 3,
+    "save_steps": 20,
+    "eval_steps": 20,
+    "warmup_steps": 100,
+    "model_type": "seq2seq_lm",
+    "model_name": "IlyaGusev/rut5_base_sum_gazeta"
+}
