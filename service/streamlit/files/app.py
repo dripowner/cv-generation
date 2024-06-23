@@ -3,7 +3,7 @@ import requests
 import re
 
 
-def create_request(text: str, server_url: str = "http://localhost:8080/generate"):
+def create_request(text: str, server_url: str = "http://service-fastapi-1:8080/generate"):
 	data = {"text": text}
 	return requests.post(
 		server_url, json=data, timeout=8000

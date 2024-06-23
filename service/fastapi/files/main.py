@@ -35,7 +35,8 @@ def predict(cv: str):
 async def lifespan(app: FastAPI):
     global model_name
     # model_name = "../../Train/models/resume-0.2"
-    model_name = "../../weights/add_full_sft_all_clear"
+    # model_name = "../../weights/add_full_sft_all_clear"
+    model_name = "../weights/add_full_sft_all_clear"
     # Load the ML model
     global model
     global tokenizer
@@ -60,4 +61,4 @@ async def generate(request: Request):
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="localhost", port=8080, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)
